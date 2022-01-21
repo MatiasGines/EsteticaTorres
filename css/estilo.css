@@ -31,7 +31,7 @@ ul {
 .nav-main {
 	
 	margin-top: 1%;
-	background-color: #FDEDEC;
+	background-color: #f3dedd;
 	opacity: 70%;
 	font-size: 17px;
 	display: flex;
@@ -70,7 +70,7 @@ ul {
 .firstbanner {
 	width: absolute;
 	height: 85vh;
-	background: url('./img/firstbanner1.jpeg') no-repeat center center/cover;
+	background: url('../img/firstbanner1.jpeg') no-repeat center center/cover;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -80,23 +80,66 @@ ul {
 	
 }
 .firstbanner h2 {
-	font-size: 6vw;
+	font-size: 10vw;
 	font-family: 'Kaushan Script', cursive;
 }
 
 /* Columnas de servicios*/
 
 .column-services {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
 	column-gap: 2%;
 	margin: 2% 0;
+	justify-content: space-around;
+	
+}
+
+.column-courses {
+	display: flex;
+	column-gap: 2%;
+	margin: 2% 0;
+	justify-content: space-around;
 	
 }
 
 
 /*cards*/
 .services-card {
+
+	margin-top: 5%;
+	border: 1px solid rgba(167, 166, 166, 0.26);
+	height: 40vh;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	background-size: contain;
+	background-position: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	
+}
+
+.services-card:hover {
+
+	box-shadow: rgb(255, 232, 255) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.services-card img {
+
+	height: 20vh;
+
+
+
+}
+
+.courses-card {
 
 	height: 40vh;
 	border-radius: 10px;
@@ -168,7 +211,7 @@ ul {
 .bannercursos {
 	border-radius: 15px;
 	margin-top: 25%;
-	background-image: url(./img/banner.png);
+	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -184,7 +227,7 @@ ul {
 
 /*bannerservicios*/
 .bannerservicios {
-	background-image: url(./img/bannerservicios.png);
+	background-image: url(../img/bannerservicios.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -196,7 +239,7 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: 300%;
+	font-size: 8vh;
 	color: whitesmoke;
 
 }
@@ -241,22 +284,27 @@ ul {
 
 
 .footer-up {
-	background-color: black;
-	color: white;
+	background: rgb(243,222,221);
+	background: linear-gradient(0deg, rgba(243,222,221,1) 60%, rgba(235,96,255,0) 100%);
 	min-height: 100px;
-	min-width: vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: flex-end; 
+	padding-bottom: 2%;
+	text-align: center;
 }
 
 .footer h4 {
 	position: relative;
 }
 .footer-under {
-	background-color: black;
-	color: white;
+	background-color: rgb(243,222,221);
 	min-height: 50px;
 	text-align: center;
+	display: grid;
+	align-items: flex-end;
+	padding-bottom: 2%;
+
 }
 
 
