@@ -7,7 +7,7 @@ h1{
 .menu-btn {
 	position: absolute;
 	cursor: pointer;
-	top: 30px;
+	top: 20px;
 	right: 30px;
 	z-index: 2;
 	font-size: 1.5rem;
@@ -23,6 +23,7 @@ ul {
 	list-style: none;
 }
 .container {
+
 	margin: auto;
 	/*valor de 90 width, pero vamos a probar 100*/
 	width: 95%;
@@ -31,14 +32,18 @@ ul {
 .nav-main {
 	
 	margin-top: 1%;
-	background-color: #f3dedd;
-	opacity: 70%;
+	background-color: rgba(243, 222, 221, 0.932);
 	font-size: 17px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
+	width: 100%;
 	padding: 20px 0px;
+	position: fixed;
+	margin: 0;
+	z-index: 100;
+
 }
 .nav-search {
 	padding-right: 40px;
@@ -77,6 +82,7 @@ ul {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 5%;
+	margin-top: 4.5vh;
 	
 }
 .firstbanner h2 {
@@ -94,13 +100,7 @@ ul {
 	
 }
 
-.column-courses {
-	display: flex;
-	column-gap: 2%;
-	margin: 2% 0;
-	justify-content: space-around;
-	
-}
+
 
 
 /*cards*/
@@ -109,6 +109,7 @@ ul {
 	margin-top: 5%;
 	border: 1px solid rgba(167, 166, 166, 0.26);
 	height: 40vh;
+	width: 25%;
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
@@ -125,6 +126,10 @@ ul {
 	
 }
 
+.services-card li{
+	margin-top: 10%;
+}
+
 .services-card:hover {
 
 	box-shadow: rgb(255, 232, 255) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -139,31 +144,66 @@ ul {
 
 }
 
+
+
+/*SECCION CURSOS*/
+
+.column-courses {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 3%;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+
 .courses-card {
 
-	height: 40vh;
+
+	height: 50vh;
+	width: 30vh;
 	border-radius: 10px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
 	text-align: center;
-	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	margin-bottom: 5%;
+	border: 1px rgba(128, 128, 128, 0.247) solid;
+}
 
+.courses-card img {
+	height: 80%;
+	margin-bottom: 3%;
 	
 }
+
+.courses-card p {
+	margin-top: 3%;
+	
+}
+
+.payButton {
+	margin: 5% 0;
+	padding: 6px 3px;
+	border: 1px lightskyblue solid;
+	border-radius: 20px;
+	background-color: lightskyblue;
+	color: rgb(255, 255, 255);
+}
+.payButton a {
+	color: linen;
+}
+
+
 
 /* SOMOS */
 .somos {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 5%;
-	margin: 25% 0;
+	margin: 20% 0 10%;
 	text-align: center;
 }
 
@@ -210,7 +250,7 @@ ul {
 /*Bannercursos*/
 .bannercursos {
 	border-radius: 15px;
-	margin-top: 25%;
+	margin-top: 10%;
 	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -231,7 +271,7 @@ ul {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-top: 25%;
+	margin-top: 10%;
 	height: 30vh;
 	border-radius: 15px;
 	text-align: center;
@@ -244,66 +284,86 @@ ul {
 
 }
 
-/* ESTILOS GALERIA FLEX BOX*/
-.gallery-title {
-	font-size: 11vh;
-	text-align: center;
-	padding: 12% 0;
-}
-.galery-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 35vh;
-	padding: 20px;
-	grid-gap: 10px;
 
-}
 
-.galery-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+/*Whatsapp button*/
 
+.whatsappButtonFloat {
+	position: fixed;
+	bottom: 3vh;
+	right: 20px;
+	color: white;
+	background-color: rgba(11, 199, 5, 0.562);
+	border-radius: 10%;
+	z-index: 100;
+	font-size: 8vh;
 }
-.galery-item:nth-child(4){
-	grid-column-start: span 2;
-
-}
-.galery-item:nth-child(5){
-	grid-row-start: span 2;
-	
-}
-
-.galery-item:nth-child(9){
-	grid-column-start: span 2;
-	
-}
-
 
 /*FOOTER*/
 
 
 .footer-up {
+
+	font-family: 'Source Sans 3', sans-serif;
 	background: rgb(243,222,221);
 	background: linear-gradient(0deg, rgba(243,222,221,1) 60%, rgba(235,96,255,0) 100%);
-	min-height: 100px;
+	min-height: 200px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	align-items: flex-end; 
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center; 
 	padding-bottom: 2%;
 	text-align: center;
 }
 
+.alturaDivFooter {
+	height: 1vh;
+}
 .footer h4 {
 	position: relative;
 }
+
+.footer em {
+
+	font-family: 'Kaushan Script';
+
+}
+
+
 .footer-under {
 	background-color: rgb(243,222,221);
-	min-height: 50px;
+	max-height: 30px;
 	text-align: center;
-	display: grid;
 	align-items: flex-end;
 	padding-bottom: 2%;
+
+}
+
+footer h3{
+	margin: 10px 5px;
+	
+}
+/*Candado de compra segura*/
+.footerPaidlock {
+	font-size: 5vh;
+}
+
+/*Iconos redes sociales footer*/
+.socialIcons{
+	font-size: 3vh;
+	margin: 2vh;
+
+}
+.socialIcons i {
+	margin: 0 1vh;
+}
+
+.footerIconCard img {
+
+	
+	margin: 0 5px 5px 0;
+	max-height: 2.5vh;
+
+
 
 }
 
@@ -326,15 +386,13 @@ ul {
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba(255, 172, 244, 0.9);
+		background: rgba(243, 222, 221, 0.89);
 		width: 50%;
 		height: 100%;
 		border-right: rgb(255, 224, 224) 1px solid;
 		padding: 30px;
 		transform: translateX(-500px);
 		transition: transform 0.5s ease-in-out;
-		/*probando dejar la barra estatica*/
-		bottom: 1;
 		
 	}
 	
