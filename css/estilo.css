@@ -1,3 +1,6 @@
+*{
+	font-family: 'Source Sans 3', sans-serif;
+}
 
 h1{
 	font-size: 10vw;
@@ -24,10 +27,8 @@ ul {
 	list-style: none;
 }
 .container {
+	font-size: 16px;
 
-	margin: auto;
-	/*valor de 90 width, pero vamos a probar 100*/
-	width: 95%;
 }
 /*navegacion*/
 .nav-main {
@@ -76,7 +77,7 @@ ul {
 /*firstbanner*/
 .firstbanner {
 	width: absolute;
-	height: 85vh;
+	height: 90vh;
 	background: url('../img/firstbanner.jpeg') no-repeat center center/cover;
 	color: white;
 	display: flex;
@@ -88,66 +89,70 @@ ul {
 	
 }
 .firstbanner h1 {
-	font-size: 10vw;
+	font-size: 12vw;
+
 	font-family: 'Kaushan Script', cursive;
 }
 
-/* Columnas de servicios*/
+/*SECCION SERVICIOS*/
 
-.column-services {
-	display: flex;
-	column-gap: 2%;
-	margin: 2% 0;
-	justify-content: space-around;
-	
-}
 
-/*cards*/
-.services-card {
+/*BANNER SERVICIOS*/
 
-	margin-top: 3%;
-	border: 1px solid rgba(167, 166, 166, 0.26);
-	height: 60vh;
-	width: 25%;
-	border-radius: 10px;
+.txt-in-img {
+
 	position: relative;
-	overflow: hidden;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 5%;
-	box-sizing: border-box;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: inline-block;
+    text-align: center;
 	
 }
 
-.services-card li{
-	margin-top: 10%;
+
+.txt-in-img h2 {
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 10vw;
+	color: whitesmoke;
+	
 }
-.services-card h3 {
-	margin-top: 3%;
-	margin-bottom: 5%;
-}
+		/*Services card*/
 
-.services-card:hover {
-
-	box-shadow: rgb(255, 232, 255) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-
-.services-card img {
-
-	height: 20vh;
-	margin-top: 5px;
-
+		/*centrado*/
+.centrado {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
 
 }
 
+.centrado li {
+	text-align: left;
+}
+
+
+
+
+
+.services .card {
+	border: none;
+}
 
 
 /*SECCION CURSOS*/
 
+/*Banner*/
+.bannercursos {
+	margin-top: 25%;
+}
+
+/*Cards*/
+ .courses .card{
+	 border: none;
+	 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ }
 .column-courses {
 
 	display: grid;
@@ -161,69 +166,123 @@ ul {
 }
 
 
-.courses-card {
 
 
-	height: 80vh;
-	width: 65%;
-	border-radius: 10px;
-	text-align: center;
+/*PAGINA DE CURSOS*/
+
+.orderedcourses {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.coursebanner {
+
+	background-image: url('../img/cursos/Semipermanente.jpeg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 60vh;
+	width: min-content;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20%;
-	border: 1px rgba(128, 128, 128, 0.247) solid;
-	box-sizing: border-box;
-	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.courses-card:hover{
-
-	box-shadow: rgba(255, 158, 239, 0.932) 0px 22px 70px 4px;
-	
-
-
-}
-
-
-
-.courses-card img {
-	height: 70%;
-	margin-bottom: 3%;
-	box-sizing: border-box;
-}
-
-.courses-card p {
-	margin-top: 3%;
-	
-}
-
-.payButton {
-	margin-top: 10%;
-	padding: 5px 8px;
-	border: 1px lightskyblue solid;
-	border-radius: 20px;
-	background-color: lightskyblue;
-	color: rgb(255, 255, 255);
-	box-sizing: border-box;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	
+	justify-content: flex-end;
+	padding-bottom: 0px;
+	box-sizing: border-box;
+	position: relative;
+
 }
-.payButton a {
-	color: white;
+
+.coursebanner h3 {
+	color: aliceblue;
+	font-family: 'Kaushan Script', cursive;
+	padding: 10% 50px;
+	font-size: 6vh;
+	box-sizing: content-box;
+}
+
+.coursesInfo {
+	padding: 5% 20% 5% 0;
+}
+
+.payContainer{
+
+	height: 60vh;
+	border: 1px lightblue solid;
+	border-radius: 3%;
+	padding: 5% 3%;
+	align-items: center;
+}
+
+.payContainer span {
+	text-decoration: line-through;
+	font-size: 1.5rem;
+
+}
+
+.payContainer em{
+	font-size: 1.125rem;
+}
+
+
+.paySelector {
+
+	/*border: 1px solid lightgray;*/
+	height: auto;
+	width: 100%;
+	margin-top: 3%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center
+=======
+
+
+}
+
+
+
+.paySelector img {
+	height: 6vh;
+}
+
+.fa-university {
+	font-size: 5vh;
+}
+
+.paySection{
+
+	margin-top: 15%;
+	/*IMPORTANTE*/
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 5vh;
+	box-sizing: border-box;
+
+
+}
+
+
+
+
+.titulos {
+	font-family: 'Source Sans 3', sans-serif;
+	text-align: center;
+
 }
 
 
 
 /* SOMOS */
-.somos {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 5%;
-	margin: 20% 0 10%;
-	text-align: center;
+
+.somos{
+	margin-top: 25%;
+	margin-bottom: 25%;
+
 }
+
+
 
 .somos img {
 	height: 90%;
@@ -233,7 +292,8 @@ ul {
 }
 .somos h2 {
 	font-family:'Kaushan Script';
-	font-size: 14vh;
+	/*font-size: 14vh;*/
+	font-size: 500%;
 	font-weight: lighter;
 
 }
@@ -244,62 +304,10 @@ ul {
 	width: 100%;
 	border-color: hotpink;
 }
-
-.logossomos{
-	text-align: left;
-	margin: 8% 0;
-}
-
-.logossomos img{
-	height: 6% ;
-	width: 6%;
-}
-.logossomos div{
-	margin: 5% 0;
-}
-.logossomos a{
+.somos a{
 	font-size: 3vh;
 	padding: 1vw;
 	color: gray;
-}
-
-
-/*en ambos banners cambiar los tamaños (height principalmente) en porcerntajes.*/
-/*Bannercursos*/
-.bannercursos {
-	border-radius: 15px;
-	margin-top: 10%;
-	background-image: url(../img/banner.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 30vh;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: absolute;
-	font-size: 8vh;
-}
-
-/*bannerservicios*/
-.bannerservicios {
-	background-image: url(../img/bannerservicios.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	margin-top: 10%;
-	height: 30vh;
-	border-radius: 15px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 8vh;
-	color: whitesmoke;
-
 }
 
 
@@ -310,12 +318,17 @@ ul {
 	position: fixed;
 	bottom: 3vh;
 	right: 20px;
-	color: white;
-	background-color: rgba(11, 199, 5, 0.562);
-	border-radius: 10%;
 	z-index: 100;
-	font-size: 8vh;
 }
+
+.whatsappButtonFloat img {
+=======
+
+
+	height: 10vh;
+}
+
+
 
 /*FOOTER*/
 
@@ -325,12 +338,13 @@ ul {
 	font-family: 'Source Sans 3', sans-serif;
 	background: rgb(243,222,221);
 	background: linear-gradient(0deg, rgba(243,222,221,1) 60%, rgba(235,96,255,0) 100%);
-	min-height: 200px;
+	min-height: 12.5em;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center; 
 	padding-bottom: 2%;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 .alturaDivFooter {
@@ -354,6 +368,16 @@ ul {
 	align-items: flex-end;
 	padding-bottom: 2%;
 
+
+
+.footer-under {
+	
+	background-color: rgb(243,222,221);
+	max-height: 1.875rem;
+	text-align: center;
+	align-items: flex-end;
+	padding-bottom: 2%;
+	margin-top: 0px;
 }
 
 footer h3{
@@ -364,6 +388,7 @@ footer h3{
 .footerPaidlock {
 	font-size: 5vh;
 }
+
 
 /*Iconos redes sociales footer*/
 .socialIcons{
@@ -381,15 +406,89 @@ footer h3{
 	margin: 0 5px 5px 0;
 	max-height: 2.5vh;
 
-
-
 }
+
+.footerIconCard img {
 
 
 /*RESPONSIVE*/
 
 
-@media (max-width: 700px) {
+/*
+@media (max-width: 1550px)
+@media (max-width: 943px)
+@media (max-width: 768px)
+@media (max-width: 615px)
+
+*/
+
+@media (max-width: 1550px) {
+
+	/*Nuestros cursos= 3 columnas*/
+	/*Nuestros servicios= 3 columnas*/
+	
+	
+
+
+.column-courses {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	margin-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-around;
+	/*align-items: center*/;
+
+
+}
+
+
+	/*///////////////////*/
+
+
+	.services-card {
+
+		margin-top: 3%;
+		border: 1px solid rgba(167, 166, 166, 0.26);
+		height: 60vh;
+		width: 18.75rem;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5%;
+		box-sizing: border-box;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		
+	}
+
+	/*///////////////////*/
+
+	.somos {
+		display: grid;
+		grid-template-columns: 1fr ;
+		column-gap: 5%;
+		margin: 20% 0 10%;
+		text-align: center;
+	}
+
+
+}
+
+
+
+/*Large devices (desktops, 943px and up*/
+@media (max-width: 943px) {
+	
+	/*//Boton desplegable nav bar*/
+	/*//Columna de servicios= 2*/
+	/*//Columna de cursos= 2*/
+	
+	
 	.menu-btn {
 		display: block;
 	}
@@ -409,7 +508,7 @@ footer h3{
 		height: 100%;
 		border-right: rgb(255, 224, 224) 1px solid;
 		padding: 30px;
-		transform: translateX(-500px);
+		transform: translateX(-520px);
 		transition: transform 0.5s ease-in-out;
 		
 	}
@@ -423,35 +522,222 @@ footer h3{
 	}
 	
 	.nav-main ul.nav-menu.show {
-		transform: translateX(-20px);
+		transform: translateX(-55px);
 	}
 	
 	.nav-main ul.nav-search {
 		margin-right: 50px;
 	}
 	
+
+	/*///////////////////*/
+
+
+	.services-card {
+
+		margin-top: 3%;
+		border: 1px solid rgba(167, 166, 166, 0.26);
+		height: 60vh;
+		width: 18.75rem;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5%;
+		box-sizing: border-box;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		
+	}
+
+	/*///////////////////*/
+
+
+	/*///////////////////*/
+	.column-courses {
+
+		display: grid;
+		grid-template-columns: 1fr ;
+		margin-top: 3%;
+		margin-right: auto;
+		margin-left: auto;
+		justify-content: space-around;
+		/*align-items: center*/;
+	
+	}
+	/*///////////////////*/
+
+
+	.somos {
+		display: grid;
+		grid-template-columns: 1fr ;
+		column-gap: 5%;
+		margin: 20% 0 10%;
+		text-align: center;
+	}
+
+
 	
 }
 
-/*RESPONSIVE GALERIA*/
-@media (min-width: 768px) {
-	.galery-container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-	.galery-item:nth-child(3){
-		grid-column-start: span 2;
+/*Medium devices (tablets, 768 and up)*/
+@media (max-width: 768px) {
+	/*Somos 1fr*/
+	/*courses 1fr*/
+	/*servicios 2fr*/
 	
+
+	/*////////////////////////////////////////////*/
+	/*////////////////////////////////////////////*/
+	/*AJUSTAR LOS TAMAÑOS DE CARTAS*/
+	/*////////////////////////////////////////////*/
+	/*////////////////////////////////////////////*/
+
+
+
+
+	.somos {
+		display: grid;
+		grid-template-columns: 1fr ;
+		column-gap: 5%;
+		margin: 20% 0 10%;
+		text-align: center;
 	}
-	.galery-item:nth-child(4){
-		grid-column-start: span 3;
+	/*///////////////////*/
+
+
+	.services-card {
+
+	margin-top: 3%;
+	border: 1px solid rgba(167, 166, 166, 0.26);
+	height: 60vh;
+	width: 18.75rem;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	
-	}
-	.galery-item:nth-child(5){
-		grid-row-start: span 3;
-	
-	}
-	.galery-item:nth-child(9){
-		grid-column-start: span 3;
-	
-	}
 }
+
+	/*///////////////////*/
+
+	/*///////////////////*/
+	.column-courses {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-around;
+	/*align-items: center*/;
+
+}
+	/*///////////////////*/
+
+}
+
+
+/*small devices (landscape phoes, 576px and up)*/
+@media (max-width: 615px){
+
+	/*Somos 1fr*/
+	/*courses 1fr*/
+	/*servicios 2fr*/
+	/*FOOTER de 1fr*/
+
+	
+	/*////////////////////////////////////////////*/
+	/*////////////////////////////////////////////*/
+	/*AJUSTAR LOS TAMAÑOS DE CARTAS
+	  AJUSTAR EL TAMAÑO DE LOS BANNERS
+	  AJUSTAR EL TAMAÑO DE PAY BUTTON
+	  AJUSTAR EL TAMAÑO DEL FOOTER
+	  */
+	/*////////////////////////////////////////////*/
+	/*////////////////////////////////////////////*/
+
+
+
+	
+	.body{
+		font-size: 14px;
+	}
+
+
+	.somos {
+		display: grid;
+		grid-template-columns: 1fr ;
+		column-gap: 5%;
+		margin: 20% 0 10%;
+		text-align: center;
+	}
+	/*///////////////////*/
+
+
+	.services-card {
+
+	margin-top: 3%;
+	border: 1px solid rgba(167, 166, 166, 0.26);
+	height: 60vh;
+	width: 18.75rem;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	
+}
+
+	/*///////////////////*/
+
+	/*///////////////////*/
+	.column-courses {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-around;
+	/*align-items: center*/;
+
+}
+	/*///////////////////*/
+
+	.footer-up {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 50px;
+		height: 400px;
+	}
+
+	.footer-under{
+		height: 100px;
+		padding: 50px 20px;
+		
+	}
+
+}
+
+
+/*PARA MOVILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*PARA HACER QUE CURSOS Y SERVICIOS SEA DESPLEGABLE, AÑADIR ACCIÓN A UN BOTÓN DE MOVIMIENTO
+EL MOVIMIENTO SE BASA EN CAMBIAR LO QUE MUESTRA (LA CLASE O HTML. COMO SE PUEDA)
+MOSTRANDO DE A UN ELEMENTO. Y TENIENDO EN DISPLAY:NONE A LOS DEMAS ELEMENTOS*/
+/*DE ESTA MANERA NOS VA A QUEDAR UNA SECCIÓN DE CURSOS QUE OCUPA UNA PANTALLA, UNA SECCIÓN 
+DE SERVICIOS, 1 FR DE SOMOS Y EL FOOTER DE 1FR*/
+

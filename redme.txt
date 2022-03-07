@@ -1,0 +1,77 @@
+Objetivo:
+    Implementar bootstap en la pagina
+    Ver cuanto tiempo de programación nos puede llevar
+
+
+Contenido:
+    //              Nav bar responsive
+    //              banner principal
+    Servicios
+        banner
+        3 cards
+    nuestros cursos
+        cards
+    somos
+        titulo, redes y texto
+        logo
+    footer
+
+
+
+1 /*Seguir con banner Servicios*/
+2 /*Agregar un margin entre las services card y los banners y entre si*/
+
+
+
+
+
+
+			<!--Services Cards -->
+			<!--
+
+				<div class="row row-cols-1 row-cols-md-3 g-3 services">
+					
+
+					<div class="col">
+						<div class="card">
+							<img src="./img/servicios-1.png" class="card-img-top" alt="servicios">
+							<div class="card-body">
+								<br>
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+									to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="col">
+							<div class="card">
+								<img src="./img/servicios-2.png" class="card-img-top" alt="servicios">
+								<div class="card-body">
+									<br><br>
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+										to additional content. This content is a little bit longer.</p>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col">
+								<div class="card">
+									<img src="./img/servicios-3.png" class="card-img-top" alt="servicios">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+											to additional content.</p>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+						
+						<br>
+					-->
