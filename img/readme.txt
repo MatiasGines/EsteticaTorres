@@ -1,1 +1,1 @@
-Imagenes utilizadas en el proyecto
+imagenes utilizadas
