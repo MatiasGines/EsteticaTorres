@@ -1,1 +1,1 @@
-imagenes de cursos
+imagenes utilizadas en los cursos

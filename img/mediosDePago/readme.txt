@@ -1,1 +1,1 @@
-imagenes medios de pago
+imagenes utilizadas para medios de pago
