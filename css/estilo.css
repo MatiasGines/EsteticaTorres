@@ -28,7 +28,10 @@ ul {
 }
 .container {
 	font-size: 16px;
-
+	margin: auto;
+	/*valor de 90 width, pero vamos a probar 100*/
+	width: 95%;
+	max-width: 100em;
 }
 /*navegacion*/
 .nav-main {
@@ -90,12 +93,10 @@ ul {
 }
 .firstbanner h1 {
 	font-size: 12vw;
-
 	font-family: 'Kaushan Script', cursive;
 }
 
 /*SECCION SERVICIOS*/
-
 
 /*BANNER SERVICIOS*/
 
@@ -130,6 +131,7 @@ ul {
 
 .centrado li {
 	text-align: left;
+	
 }
 
 
@@ -235,11 +237,8 @@ ul {
 	display: inline-flex;
 	justify-content: space-between;
 	align-items: center
-=======
-
 
 }
-
 
 
 .paySelector img {
@@ -311,7 +310,6 @@ ul {
 }
 
 
-
 /*Whatsapp button*/
 
 .whatsappButtonFloat {
@@ -322,12 +320,9 @@ ul {
 }
 
 .whatsappButtonFloat img {
-=======
-
 
 	height: 10vh;
 }
-
 
 
 /*FOOTER*/
@@ -362,15 +357,6 @@ ul {
 
 
 .footer-under {
-	background-color: rgb(243,222,221);
-	max-height: 30px;
-	text-align: center;
-	align-items: flex-end;
-	padding-bottom: 2%;
-
-
-
-.footer-under {
 	
 	background-color: rgb(243,222,221);
 	max-height: 1.875rem;
@@ -389,7 +375,6 @@ footer h3{
 	font-size: 5vh;
 }
 
-
 /*Iconos redes sociales footer*/
 .socialIcons{
 	font-size: 3vh;
@@ -406,13 +391,12 @@ footer h3{
 	margin: 0 5px 5px 0;
 	max-height: 2.5vh;
 
-}
 
-.footerIconCard img {
+
+}
 
 
 /*RESPONSIVE*/
-
 
 /*
 @media (max-width: 1550px)
@@ -439,7 +423,6 @@ footer h3{
 	margin-left: auto;
 	justify-content: space-around;
 	/*align-items: center*/;
-
 
 }
 
@@ -724,14 +707,15 @@ footer h3{
 		grid-gap: 50px;
 		height: 400px;
 	}
-
 	.footer-under{
 		height: 100px;
 		padding: 50px 20px;
 		
 	}
 
+
 }
+
 
 
 /*PARA MOVILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -740,4 +724,3 @@ EL MOVIMIENTO SE BASA EN CAMBIAR LO QUE MUESTRA (LA CLASE O HTML. COMO SE PUEDA)
 MOSTRANDO DE A UN ELEMENTO. Y TENIENDO EN DISPLAY:NONE A LOS DEMAS ELEMENTOS*/
 /*DE ESTA MANERA NOS VA A QUEDAR UNA SECCIÓN DE CURSOS QUE OCUPA UNA PANTALLA, UNA SECCIÓN 
 DE SERVICIOS, 1 FR DE SOMOS Y EL FOOTER DE 1FR*/
-
